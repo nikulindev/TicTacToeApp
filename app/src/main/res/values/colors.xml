@@ -6,4 +6,7 @@
     <color name="grey">#9A6953</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="backgroundMainLayout">#3587C9</color>
+    <color name="backgroundNavButton">#18689E</color>
+    <color name="green">#1AFF40</color>
 </resources>

@@ -7,6 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import com.nikulindev.tictactoeapp.databinding.FragmentMainBinding
 
+
+
+
+
+
 class MainFragment : Fragment() {
 
     private var _binding: FragmentMainBinding? = null
@@ -20,7 +25,13 @@ class MainFragment : Fragment() {
 
         _binding = FragmentMainBinding.inflate(inflater, container, false)
         return binding.root
+
+
+
+
     }
+
+
 
 
 
