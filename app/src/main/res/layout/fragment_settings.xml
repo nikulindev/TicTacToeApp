@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundMainLayout"
+    tools:context=".SettingsFragment">
+
+    <TextView
+        android:id="@+id/tvSettings"
+        style="@style/StyleTitle30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_big_64"
+        android:text="@string/btn_settings_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvVoice"
+        style="@style/StyleTitle24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_big_32"
+        android:layout_marginTop="@dimen/margin_big_32"
+        android:text="@string/tv_voice_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSettings" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:progressDrawable="@drawable/style_seekbar"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="@dimen/margin_big_32"
+        android:layout_marginEnd="@dimen/margin_big_32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVoice" />
+
+
+
+    <TextView
+        android:id="@+id/tvDifficulty"
+        style="@style/StyleTitle24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_big_32"
+        android:layout_marginTop="@dimen/margin_big_32"
+        android:text="@string/tv_difficulty_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <ImageView
+        android:id="@+id/ivPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_big_32"
+        android:layout_marginTop="@dimen/margin_big_32"
+        android:src="@drawable/ic_previous"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDifficulty" />
+
+    <TextView
+        android:id="@+id/tvDifficultyEasy"
+        style="@style/StyleDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_difficulty_easy_text"
+        app:layout_constraintBottom_toBottomOf="@+id/ivPrevious"
+        app:layout_constraintEnd_toStartOf="@+id/ivNext"
+        app:layout_constraintStart_toEndOf="@+id/ivPrevious"
+        app:layout_constraintTop_toTopOf="@+id/ivPrevious" />
+
+    <ImageView
+        android:id="@+id/ivNext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_big_32"
+        android:src="@drawable/ic_next"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDifficultyEasy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvDifficultyEasy" />
+
+    <TextView
+        android:id="@+id/tvRules"
+        style="@style/StyleTitle24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_big_32"
+        android:layout_marginTop="@dimen/margin_big_32"
+        android:text="@string/tv_rules_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPrevious" />
+
+    <CheckBox
+        android:id="@+id/checkBoxVertical"
+        style="@style/StyleTitle24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_big_32"
+        android:layout_marginTop="@dimen/margin_big_32"
+        android:paddingStart="@dimen/margin_small_8"
+        android:text="@string/tv_check_box_vertical_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRules"
+        tools:ignore="RtlSymmetry" />
+
+    <CheckBox
+        android:id="@+id/checkBoxHorizontal"
+        style="@style/StyleTitle24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_big_32"
+        android:layout_marginTop="@dimen/margin_small_8"
+        android:paddingStart="@dimen/margin_small_8"
+        android:text="@string/tv_check_box_horizontal_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxVertical"
+        tools:ignore="RtlSymmetry" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDiagonal"
+        style="@style/StyleTitle24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_big_32"
+        android:layout_marginTop="@dimen/margin_small_8"
+        android:paddingStart="@dimen/margin_small_8"
+        android:text="@string/tv_check_box_diagonal_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxHorizontal"
+        tools:ignore="RtlSymmetry" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

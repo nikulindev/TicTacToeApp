@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_big_64">64dp</dimen>
+    <dimen name="margin_big_32">32dp</dimen>
+    <dimen name="margin_normal_20">20dp</dimen>
+    <dimen name="margin_normal_16">16dp</dimen>
+    <dimen name="margin_normal_10">10dp</dimen>
+    <dimen name="margin_small_8">8dp</dimen>
+    <dimen name="margin_small_4">4dp</dimen>
+
+    <dimen name="width_big_256">256dp</dimen>
+
+    <dimen name="textSize_big_24">24sp</dimen>
+    <dimen name="textSize_big_30">30sp</dimen>
+
+    <dimen name="angle_main">360</dimen>
+
+</resources>
